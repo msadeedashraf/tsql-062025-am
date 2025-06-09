@@ -123,3 +123,14 @@ Popular RDBMS:
 ---
 
 Databases are the backbone of almost every IT system. Understanding how they evolved and how to use the right one for the right task is key to becoming a successful developer or data specialist.
+
+
+---
+
+### Microsoft Learn T-SQL
+
+[Microsoft TSQL](https://learn.microsoft.com/en-us/training/paths/get-started-querying-with-transact-sql/)
+
+### Installation 
+
+[Download](https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x1009&culture=en-ca&country=ca)
