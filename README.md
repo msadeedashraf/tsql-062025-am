@@ -152,3 +152,18 @@ Databases are the backbone of almost every IT system. Understanding how they evo
 ![Step-1](/Assets/ssms_setup_2.png)
 ![Step-1](/Assets/ssms_setup_3.png)
 ![Step-1](/Assets/ssms_setup_4.png)
+
+### TO Connect using SSMS
+
+- To start the management studio windows+ssms.
+- Type localhost/sqlexpress in the server name and press connect
+  
+![Connect](/Assets/ssms_setup_5.png)
+
+### How to restore the Database
+
+- AdventureWorks sample databases
+
+[AdventureWorks sample databases](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms)
+[Download OLTP](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2022.bak)
+[Download Lightweight](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksLT2022.bak)
