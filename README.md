@@ -134,3 +134,21 @@ Databases are the backbone of almost every IT system. Understanding how they evo
 ### Installation 
 
 [Download](https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x1009&culture=en-ca&country=ca)
+
+![Step-1](/Assets/db_setup_1.png)
+![Step-1](/Assets/db_setup_2.png)
+![Step-1](/Assets/db_setup_3.png)
+![Step-1](/Assets/db_setup_4.png)
+![Step-1](/Assets/db_setup_5.png)
+![Step-1](/Assets/db_setup_6.png)
+
+### Install SQL Server Management Studio
+
+[SSMS](https://learn.microsoft.com/en-us/ssms/install/install?redirectedfrom=MSDN)
+
+[Download SSMS](https://aka.ms/ssms/21/release/vs_SSMS.exe)
+
+![Step-1](/Assets/ssms_setup_1.png)
+![Step-1](/Assets/ssms_setup_2.png)
+![Step-1](/Assets/ssms_setup_3.png)
+![Step-1](/Assets/ssms_setup_4.png)
