@@ -1,3 +1,10 @@
+CREATE DATABASE HR
+go
+
+USE HR
+go
+
+
 CREATE TABLE regions (
 	region_id INT IDENTITY(1,1) PRIMARY KEY,
 	region_name VARCHAR (25) DEFAULT NULL
@@ -57,3 +64,49 @@ CREATE TABLE dependents (
 	relationship VARCHAR (25) NOT NULL,
 	employee_id INT NOT NULL,
 	FOREIGN KEY (employee_id) REFERENCES employees (employee_id) ON DELETE CASCADE ON UPDATE CASCADE);
+
+
+		/*
+
+//If we have to drop the table objects
+
+drop table regions
+drop table countries
+drop table locations
+drop table jobs
+drop table employees
+drop table dependents
+
+
+
+
+
+DECLARE @TableName SYSNAME = 'dependents'; -- Replace with your table name
+DECLARE @sql NVARCHAR(MAX) = N'';
+
+-- 1. Drop foreign keys that reference this table (from other tables)
+SELECT @sql += '
+ALTER TABLE [' + sch.name + '].[' + t.name + '] 
+DROP CONSTRAINT [' + fk.name + '];'
+FROM sys.foreign_keys fk
+JOIN sys.tables t ON fk.parent_object_id = t.object_id
+JOIN sys.schemas sch ON t.schema_id = sch.schema_id
+WHERE fk.referenced_object_id = OBJECT_ID(@TableName);
+
+-- 2. Drop foreign keys on this table (it references others)
+SELECT @sql += '
+ALTER TABLE [' + sch.name + '].[' + t.name + '] 
+DROP CONSTRAINT [' + fk.name + '];'
+FROM sys.foreign_keys fk
+JOIN sys.tables t ON fk.parent_object_id = t.object_id
+JOIN sys.schemas sch ON t.schema_id = sch.schema_id
+WHERE fk.parent_object_id = OBJECT_ID(@TableName);
+
+-- 3. Drop the table
+SET @sql += '
+DROP TABLE [' + @TableName + '];';
+
+-- 4. Execute the full dynamic SQL
+EXEC sp_executesql @sql;
+
+	*/
