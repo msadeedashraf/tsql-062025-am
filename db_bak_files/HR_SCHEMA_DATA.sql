@@ -1,3 +1,5 @@
+USE HR
+go
 /*Data for the table regions */
 SET IDENTITY_INSERT regions ON;
   
