@@ -37,3 +37,21 @@ SELECT TOP (1000) [employee_id]
   inner join  departments d  on e.department_id = d.department_id 
   where d.department_name = 'IT'
   order by e.salary desc 
+
+
+--Example Two
+SELECT TOP (1000) [region_id]
+      ,[region_name]
+  FROM [hr].[dbo].[regions] r
+  where r.region_id = 1
+
+  SELECT TOP (1000) [country_id]
+      ,[country_name]
+      ,[region_id]
+  FROM [hr].[dbo].[countries] c
+  where c.region_id = 1
+
+  select r.region_name, c.country_name, c.country_id from 
+  [hr].[dbo].[regions] r join [hr].[dbo].[countries] c
+  on r.region_id =c.region_id
+  where r.region_name = 'Asia'

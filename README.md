@@ -129,6 +129,9 @@ Databases are the backbone of almost every IT system. Understanding how they evo
 
 ### Microsoft Learn T-SQL
 
+- DP-080: Querying with Transact-SQL
+[Labs]([DP-080: Querying with Transact-SQL](https://microsoftlearning.github.io/dp-080-Transact-SQL/))
+
 [Microsoft TSQL](https://learn.microsoft.com/en-us/training/paths/get-started-querying-with-transact-sql/)
 
 ### Installation 
