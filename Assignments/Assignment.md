@@ -17,7 +17,10 @@
 - Create a database  in SQL Server `JOB_DB` and Create a table `jobs` and insert the data in it. (table column and data info can be picked up from the `/json/json_job_listing.json`).
 - [Solution](/jobzila_jobs_db.sql)
 
----
+
+### Assignment # 5
+- Find the difference between Parse vs Cast vs Convert in T-SQL
+
 
 
 
