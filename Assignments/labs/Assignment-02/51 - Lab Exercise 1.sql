@@ -16,7 +16,8 @@ GO
 -- Execute the written statement and compare the results that you got with the desired results shown in the file 52 - Lab Exercise  Task 1 Result.txt.
 ---------------------------------------------------------------------
 
-
+select c.custid, c.companyname, c.contactname, address, city, country,  phone from Sales.Customers as c
+WHERE c.country = 'Brazil'
 
 ---------------------------------------------------------------------
 -- Task 2
@@ -26,7 +27,8 @@ GO
 --
 -- Execute the written statement and compare the results that you got with the desired results shown in the file 53 - Lab Exercise 1 - Task 2 Result.txt.
 ---------------------------------------------------------------------
-
+select cus.custid, cus.companyname, cus.contactname, cus.address, cus.city, cus.country,  cus.phone from Sales.Customers as cus
+WHERE cus.country in ('Brazil', 'USA', 'UK')
 
 
 ---------------------------------------------------------------------
@@ -47,7 +49,7 @@ GO
 --
 -- Execute the query. Notice two things: 
 --  First, the query retrieves all the rows from the Sales.Customers table. 
---  Second, there is a comparison operator in the ON clause specifying that the city column should be equal to the value “Paris”.
+--  Second, there is a comparison operator in the ON clause specifying that the city column should be equal to the value ï¿½Parisï¿½.
 ---------------------------------------------------------------------
 
 SELECT
@@ -72,7 +74,7 @@ LEFT OUTER JOIN Sales.Orders AS o ON c.custid = o.custid AND c.city = N'Paris';
 -- Task 5
 -- 
 -- Write a T-SQL statement to retrieve customers from the Sales.Customers table that do not have matching orders in the Sales.Orders table. 
--- Matching customers with orders is based on a comparison between the customer’s custid value and the order’s custid value. 
+-- Matching customers with orders is based on a comparison between the customerï¿½s custid value and the orderï¿½s custid value. 
 -- Retrieve the custid and companyname columns from the Sales.Customers table. 
 -- (Hint: Use a T-SQL statement that is similar to the one in the previous task.)
 --

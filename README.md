@@ -183,3 +183,7 @@ Databases are the backbone of almost every IT system. Understanding how they evo
 [Download Lightweight](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksLT2022.bak)
 
 [Restore DB Steps](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms#restore-to-sql-server)
+
+### Date Formats
+
+[Link](https://learn.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver17)
